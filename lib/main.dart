@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dot_matrix_text/dot_matrix_text.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -67,11 +68,18 @@ class MyHomePageState extends State<MyHomePage> {
   double ledSize = 4.0;
   double ledSpacing = 2.0;
   Color blankLedColor = blankLedColors.first;
-  TextStyle textStyle = TextStyle(
+  // TextStyle textStyle = TextStyle(
+  //   fontSize: 80,
+  //   fontWeight: FontWeight.bold,
+  //   color: ledColors.first,
+  // );
+
+  TextStyle textStyle = GoogleFonts.nanumPenScript(
     fontSize: 80,
     fontWeight: FontWeight.bold,
     color: ledColors.first,
   );
+
   bool mirrorMode = false;
   bool flickerMode = false;
   Duration flickerSpeed = const Duration(seconds: 1);
